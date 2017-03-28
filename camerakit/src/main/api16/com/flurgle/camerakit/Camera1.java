@@ -405,8 +405,8 @@ public class Camera1 extends CameraImpl {
         mVideoFile = new File(mPreview.getView().getContext().getExternalFilesDir(null), "video.mp4");
         mMediaRecorder.setOutputFile(mVideoFile.getAbsolutePath());
 
-        mMediaRecorder.setMaxDuration(20000);
-        mMediaRecorder.setMaxFileSize(5000000);
+        mMediaRecorder.setMaxDuration(0);
+        mMediaRecorder.setMaxFileSize(0);
         mMediaRecorder.setOrientationHint(mCameraInfo.orientation);
     }
 
